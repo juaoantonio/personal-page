@@ -71,6 +71,51 @@ const slideSections: SlideSection[] = [
       },
     ],
   },
+
+  {
+    title: "Backend",
+    description: "Tecnologias que utilizo para criar APIs e backends.",
+    image: "/backend.png",
+    items: [
+      {
+        title: "Node.js",
+        logo: "/node.png",
+      },
+
+      {
+        title: "Fastify.js",
+        logo: "/fastify.png",
+      },
+
+      {
+        title: "Postgres",
+        logo: "/postgres.png",
+      },
+    ],
+  },
+
+  {
+    title: "Outras tecnologias",
+    description:
+      "Tecnologias genéricas que utilizo para criar aplicações e projetos.",
+    image: "/other.png",
+    items: [
+      {
+        title: "Git",
+        logo: "/git.png",
+      },
+
+      {
+        title: "Docker",
+        logo: "/docker.png",
+      },
+
+      {
+        title: "Linux",
+        logo: "/linux.png",
+      },
+    ],
+  },
 ];
 
 export function Slide() {
