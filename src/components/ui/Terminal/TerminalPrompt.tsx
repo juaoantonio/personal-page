@@ -24,7 +24,7 @@ export function TerminalPrompt() {
 
   return (
     <div
-      className="a relative flex-1 space-y-3 rounded-b-lg border-2 border-[rgba(113,220,200,0.10)] bg-[rgba(221,248,243,0.10)] px-10 py-6 before:absolute before:left-4 before:top-8 before:h-10 before:w-4 before:border-b-2 before:border-l-2 before:border-t-2 before:border-b-[#64688A] before:border-l-[#64688A] before:border-t-[#64688A]"
+      className="a relative min-h-[416px] flex-1 space-y-3 rounded-b-lg border-2 border-[rgba(113,220,200,0.10)] bg-[rgba(221,248,243,0.10)] px-10 py-6 before:absolute before:left-4 before:top-8 before:h-10 before:w-4 before:border-b-2 before:border-l-2 before:border-t-2 before:border-b-[#64688A] before:border-l-[#64688A] before:border-t-[#64688A]"
       ref={elementRef}
     >
       <div className="flex items-center gap-2">

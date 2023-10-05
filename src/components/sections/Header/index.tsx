@@ -27,7 +27,7 @@ export function Header() {
       if (!element) return;
 
       sectionsYCoordinates[href!.replace("#", "")] =
-        element.getBoundingClientRect().top + window.scrollY - 600;
+        element.getBoundingClientRect().top + window.scrollY - 200;
     });
   }, []);
 
