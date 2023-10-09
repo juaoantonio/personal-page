@@ -6,17 +6,24 @@ Sou acadêmico do curso de Ciência da Computação na Universidade Federal do P
 
 export function TerminalPromptText() {
   const [terminalText, setTerminalText] = useState("");
-  const [terminalTextIndex, setTerminalTextIndex] = useState(0);
 
   useEffect(() => {
-    if (terminalTextIndex === terminalMessage.length) return;
+    let index = -1;
+
     const interval = setInterval(() => {
-      setTerminalText((prev) => prev + terminalMessage[terminalTextIndex]);
-      setTerminalTextIndex((prev) => prev + 1);
-    }, 20);
+      index += 1;
+
+      setTerminalText((prev) => prev + terminalMessage[index]);
+
+      if (index === terminalMessage.length - 1) {
+        console.log("clear");
+
+        clearInterval(interval);
+      }
+    }, 25);
 
     return () => clearInterval(interval);
-  }, [terminalTextIndex]);
+  }, []);
 
   return (
     <pre className="mt-4 whitespace-pre-line">
