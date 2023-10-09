@@ -10,8 +10,8 @@ const sectionsYCoordinates: {
   [key: string]: number;
 } = {
   intro: 0,
-  skills: 700,
-  about: 1200,
+  skills: 0,
+  about: 0,
 };
 
 export function Header() {
