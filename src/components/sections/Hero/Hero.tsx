@@ -64,7 +64,6 @@ export function Hero() {
 
         <div className="mx-auto flex flex-wrap justify-center gap-5 md:justify-normal">
           <Button.Root
-            className="mt-5 flex-1"
             href="https://api.whatsapp.com/send?phone=+5591985992757&text=Ol%C3%A1%2C%20Jo%C3%A3o%21%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto%20com%20voc%C3%AA%21"
             target="_blank"
             rel="external"
@@ -72,7 +71,6 @@ export function Hero() {
             Contate-me
           </Button.Root>
           <Button.Root
-            className="mt-5 flex-1"
             ghost
             href="https://github.com/juaoantonio/"
             target="_blank"
@@ -82,7 +80,6 @@ export function Hero() {
             <Button.Icon icon={Github} />
           </Button.Root>
           <Button.Root
-            className="mt-5 flex-1"
             ghost
             href="https://www.linkedin.com/in/juaoantonio/"
             target="_blank"

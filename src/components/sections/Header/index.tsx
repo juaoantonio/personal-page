@@ -5,6 +5,8 @@ import { HeaderLogo } from "./HeaderLogo";
 import { HeaderNavigation } from "./HeaderNavigation";
 import { HeaderNavigationItem } from "./HeaderNavigationItem";
 import { MouseEvent, useCallback, useEffect, useRef, useState } from "react";
+import { Button } from "@/components/ui/Button";
+import { Download } from "lucide-react";
 
 const sectionsYCoordinates: {
   [key: string]: number;
@@ -90,6 +92,16 @@ export function Header() {
         >
           Sobre mim
         </HeaderNavigationItem>
+
+        <Button.Root
+          className="py-2 text-sm"
+          ghost
+          href="/joao_antonio_curriculo.pdf"
+          download
+        >
+          Baixar CV
+          <Button.Icon icon={Download} />
+        </Button.Root>
       </HeaderNavigation>
     </HeaderRoot>
   );
