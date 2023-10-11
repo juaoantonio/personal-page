@@ -26,6 +26,7 @@ export function SlideDescription({
         height={250}
         alt="imagem de fundo"
         className="absolute -top-16 left-[25%] z-[-1] w-[55%] md:-top-24"
+        priority={true}
       />
     </div>
   );
