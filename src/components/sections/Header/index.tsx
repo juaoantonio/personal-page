@@ -7,6 +7,7 @@ import { HeaderNavigationItem } from "./HeaderNavigationItem";
 import { MouseEvent, useCallback, useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { Download } from "lucide-react";
+import { useMedia } from "./hooks/useMedia";
 
 const sectionsYCoordinates: {
   [key: string]: number;
@@ -19,6 +20,7 @@ const sectionsYCoordinates: {
 export function Header() {
   const [y, setY] = useState(0);
   const [visibleSection, setVisibleSection] = useState<string>("intro");
+  const isMobile = useMedia("(max-width: 570px)");
 
   useEffect(() => {
     const internalLinks = document.querySelectorAll("a[href^='#']");
@@ -52,7 +54,7 @@ export function Header() {
     window.addEventListener("scroll", handleScroll);
   }, [y, getVisibleSection]);
 
-  async function handleNavigationItemClick(e: MouseEvent<HTMLAnchorElement>) {
+  function handleNavigationItemClick(e: MouseEvent<HTMLAnchorElement>) {
     e.preventDefault();
 
     const href = e.currentTarget.getAttribute("href");
@@ -71,27 +73,31 @@ export function Header() {
     <HeaderRoot>
       <HeaderLogo />
       <HeaderNavigation>
-        <HeaderNavigationItem
-          href="#intro"
-          active={visibleSection === "intro"}
-          onClick={handleNavigationItemClick}
-        >
-          Introdução
-        </HeaderNavigationItem>
-        <HeaderNavigationItem
-          href="#skills"
-          active={visibleSection === "skills"}
-          onClick={handleNavigationItemClick}
-        >
-          Skills
-        </HeaderNavigationItem>
-        <HeaderNavigationItem
-          href="#about"
-          active={visibleSection === "about"}
-          onClick={handleNavigationItemClick}
-        >
-          Sobre mim
-        </HeaderNavigationItem>
+        {!isMobile && (
+          <>
+            <HeaderNavigationItem
+              href="#intro"
+              active={visibleSection === "intro"}
+              onClick={handleNavigationItemClick}
+            >
+              Introdução
+            </HeaderNavigationItem>
+            <HeaderNavigationItem
+              href="#skills"
+              active={visibleSection === "skills"}
+              onClick={handleNavigationItemClick}
+            >
+              Skills
+            </HeaderNavigationItem>
+            <HeaderNavigationItem
+              href="#about"
+              active={visibleSection === "about"}
+              onClick={handleNavigationItemClick}
+            >
+              Sobre mim
+            </HeaderNavigationItem>
+          </>
+        )}
 
         <Button.Root
           className="py-2 text-sm"
