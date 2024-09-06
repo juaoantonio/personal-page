@@ -10,7 +10,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "João Barbosa | Frontend Developer & UI/UX Designer",
   description:
-    "Meu nome é João, tenho 19 anos e sou Desenvolvedor Front-End com experência em React.js, Next.js, JavaScript, TypeScript, TailwindCSS e outras tecnologias. Porém, tecnologias específicas não definem um bom profissional, mas sim sua habilidade em resolver problemas do usuário, e é nisso que acredito e aplico no meu dia-a-dia como desenvolvedor.",
+    "Meu nome é João, tenho 20 anos e sou Desenvolvedor Backend com experiência em NestJS, Spring, TypeScript, MySQL, e outras tecnologias. No entanto, o que realmente define um bom profissional não são as ferramentas específicas, mas a habilidade de construir soluções robustas e escaláveis para atender às necessidades dos usuários. Esse é o princípio que aplico no meu dia a dia como desenvolvedor",
 };
 
 export default function RootLayout({

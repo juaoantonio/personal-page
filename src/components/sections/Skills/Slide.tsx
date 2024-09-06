@@ -6,34 +6,30 @@ import { SlideSection } from "@/components/ui/Slide/types";
 
 const slideSections: SlideSection[] = [
   {
-    title: "Fundamentos",
-    description:
-      "Tecnologias que domino e baseiam meus conhecimentos em bibliotecas e frameworks frontend.",
-
-    image: "/foundations.png",
-
+    title: "Backend",
+    description: "Tecnologias que utilizo para criar aplicações de servidor.",
+    image: "/backend.png",
     items: [
       {
-        title: "JavaScript",
-        logo: "/javascript.png",
+        title: "Spring",
+        logo: "/spring.png",
       },
 
       {
-        title: "HTML",
-        logo: "/html.svg",
+        title: "Nest.js",
+        logo: "/nest.png",
       },
 
       {
-        title: "CSS",
-        logo: "/css.png",
+        title: "Postgres",
+        logo: "/postgres.png",
       },
     ],
   },
 
   {
-    title: "Bibliotecas e Frameworks",
-    description:
-      "Tecnologias que domino e baseiam meus conhecimentos em bibliotecas e frameworks frontend.",
+    title: "Frontend",
+    description: "Tecnologias que utilizo para criar interfaces de usuário.",
     image: "/frameworks.png",
     items: [
       {
@@ -54,42 +50,23 @@ const slideSections: SlideSection[] = [
   },
 
   {
-    title: "Design",
+    title: "Design e Arquitetura",
     description:
-      "Ferramentas e princípios de design que utilizo para criar interfaces e experiências de usuário.",
+      "Conceitos e princípios de design e arquitetura que utilizo para criar aplicações escaláveis e de fácil manutenção.",
     image: "/design-background.png",
 
     items: [
       {
-        title: "Figma",
-        logo: "/figma.png",
+        title: "Domain-Driven Design",
+        logo: "/ddd.png",
       },
-
       {
-        title: "Design Principles",
-        logo: "/design.png",
+        title: "Clean Arch",
+        logo: "/clean.png",
       },
-    ],
-  },
-
-  {
-    title: "Backend",
-    description: "Tecnologias que utilizo para criar APIs e backends.",
-    image: "/backend.png",
-    items: [
       {
-        title: "Node.js",
-        logo: "/node.png",
-      },
-
-      {
-        title: "Fastify.js",
-        logo: "/fastify.png",
-      },
-
-      {
-        title: "Postgres",
-        logo: "/postgres.png",
+        title: "Test-Driven Development",
+        logo: "/tdd.png",
       },
     ],
   },

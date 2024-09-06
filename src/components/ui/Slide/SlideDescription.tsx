@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ComponentProps, PropsWithChildren, useEffect, useState } from "react";
+import { ComponentProps } from "react";
 
 type SlideDescriptionProps = ComponentProps<"div"> & {
   title: string;
@@ -25,7 +25,7 @@ export function SlideDescription({
         width={250}
         height={250}
         alt="imagem de fundo"
-        className="absolute -top-16 left-[25%] z-[-1] w-[55%] md:-top-24"
+        className="absolute -top-16 left-[25%] -z-[1000] w-[55%] md:-top-24"
         priority={true}
       />
     </div>

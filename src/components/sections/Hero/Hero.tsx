@@ -20,22 +20,22 @@ export function Hero() {
           height={500}
         />
         <Image
-          className="absolute bottom-[120px] left-[24%] -z-10 w-[15%] animate-[float_2.8s_ease-in_infinite_alternate_none_running]"
-          src={"/next.svg"}
+          className="absolute bottom-[140px] left-[20%] -z-10 w-[15%] animate-[float_2.8s_ease-in_infinite_alternate_none_running]"
+          src={"/typescript.png"}
           alt={"NextJS Icon"}
           width={76}
           height={76}
         />
         <Image
           className="absolute bottom-[180px] right-[13%] -z-10 w-[15%] animate-[float_2.2s_linear_infinite_alternate_none_running]"
-          src={"/react.svg"}
+          src={"/spring.png"}
           alt={"NextJS Icon"}
           width={76}
           height={76}
         />
         <Image
-          className="absolute bottom-[15%] right-[20%] w-[15%] animate-[float_2.4s_ease-out_infinite_alternate_none_running]"
-          src={"/typescript.svg"}
+          className="absolute bottom-[10%] right-[25%] w-[18%] animate-[float_2.4s_ease-out_infinite_alternate_none_running]"
+          src={"/nest.png"}
           alt={"NextJS Icon"}
           width={76}
           height={76}
@@ -53,12 +53,11 @@ export function Hero() {
 
         <div className="grid gap-4 text-center md:gap-5 md:text-start">
           <p className="font-bold text-primary-2">Hello, there!</p>
-          <Title principal>Frontend Developer & UI/UX Designer</Title>
+          <Title principal>Backend FullStack Developer</Title>
           <p className="mx-auto max-w-lg md:mx-0">
             Me chamo João Barbosa e sou um desenvolvedor experiente em
-            JavaScript e TypeScript, criando interfaces de alta qualidade com
-            Next.js e React.js, focando na usabilidade e eficácia da experiência
-            do usuário.
+            desenvolvimento de aplicações web usando Typescript/NestJS e
+            Java/Spring.
           </p>
         </div>
 
