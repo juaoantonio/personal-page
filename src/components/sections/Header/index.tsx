@@ -4,7 +4,7 @@ import { HeaderRoot } from "./HeaderRoot";
 import { HeaderLogo } from "./HeaderLogo";
 import { HeaderNavigation } from "./HeaderNavigation";
 import { HeaderNavigationItem } from "./HeaderNavigationItem";
-import { MouseEvent, useCallback, useEffect, useRef, useState } from "react";
+import { MouseEvent, useCallback, useEffect, useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { Download } from "lucide-react";
 import { useMedia } from "./hooks/useMedia";
@@ -102,7 +102,7 @@ export function Header() {
         <Button.Root
           className="py-2 text-sm"
           ghost
-          href="/joao_antonio_curriculo.pdf"
+          href={process.env.NEXT_PUBLIC_CV_URL}
           download
         >
           Baixar CV
