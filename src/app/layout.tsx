@@ -10,7 +10,25 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "João Barbosa | Backend FullStack Developer",
   description:
-    "Meu nome é João, tenho 20 anos e sou Desenvolvedor Backend com experiência em NestJS, Spring, TypeScript, MySQL, e outras tecnologias. No entanto, o que realmente define um bom profissional não são as ferramentas específicas, mas a habilidade de construir soluções robustas e escaláveis para atender às necessidades dos usuários. Esse é o princípio que aplico no meu dia a dia como desenvolvedor",
+    "João, 20 anos, é Desenvolvedor Backend especialista em NestJS, Spring, TypeScript e MySQL. Constrói soluções robustas e escaláveis, sempre focado na experiência do usuário.",
+    openGraph: {
+    locale: "pt_BR",
+     type: "website",
+      siteName: "João Barbosa | Backend FullStack Developer",
+        title:
+          "João Barbosa | Backend FullStack Developer",
+        description:
+          "João, 20 anos, é Desenvolvedor Backend especialista em NestJS, Spring, TypeScript e MySQL. Constrói soluções robustas e escaláveis, sempre focado na experiência do usuário.",
+        url: "https://joaobarbosa.dev.br",
+        images: [
+          {
+            url: "/og.jpg",
+    width: 239,
+    height: 239,
+    alt: "João Barbosa | Backend FullStack Developer",
+  },
+   ],
+ },
 };
 
 export default function RootLayout({
