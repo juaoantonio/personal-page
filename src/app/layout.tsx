@@ -8,7 +8,7 @@ import { Footer } from "@/components/sections/Footer";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "João Barbosa | Frontend Developer & UI/UX Designer",
+  title: "João Barbosa | Backend FullStack Developer",
   description:
     "Meu nome é João, tenho 20 anos e sou Desenvolvedor Backend com experiência em NestJS, Spring, TypeScript, MySQL, e outras tecnologias. No entanto, o que realmente define um bom profissional não são as ferramentas específicas, mas a habilidade de construir soluções robustas e escaláveis para atender às necessidades dos usuários. Esse é o princípio que aplico no meu dia a dia como desenvolvedor",
 };
