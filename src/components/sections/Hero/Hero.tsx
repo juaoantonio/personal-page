@@ -11,34 +11,14 @@ export function Hero() {
       className="container-wrapper center grid justify-items-center md:grid-cols-2 md:items-center md:gap-8"
       id="intro"
     >
-      <div className="relative">
+      <div className="relative m-2">
+        <span className={'bg-white absolute -inset-1 -z-10 block animate-tilt rounded-full'}></span>
         <Image
-          className=""
-          src={"/hero-photo.png"}
+          className="rounded-full"
+          src={"/foto-pixel-3.png"}
           alt={"João Barbosa"}
           width={500}
           height={500}
-        />
-        <Image
-          className="absolute bottom-[140px] left-[20%] -z-10 w-[15%] animate-[float_2.8s_ease-in_infinite_alternate_none_running]"
-          src={"/typescript.png"}
-          alt={"NextJS Icon"}
-          width={76}
-          height={76}
-        />
-        <Image
-          className="absolute bottom-[180px] right-[13%] -z-10 w-[15%] animate-[float_2.2s_linear_infinite_alternate_none_running]"
-          src={"/spring.png"}
-          alt={"NextJS Icon"}
-          width={76}
-          height={76}
-        />
-        <Image
-          className="absolute bottom-[10%] right-[25%] w-[18%] animate-[float_2.4s_ease-out_infinite_alternate_none_running]"
-          src={"/nest.png"}
-          alt={"NextJS Icon"}
-          width={76}
-          height={76}
         />
       </div>
 
